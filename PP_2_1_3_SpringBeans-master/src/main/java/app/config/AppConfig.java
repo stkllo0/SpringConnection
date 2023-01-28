@@ -16,6 +16,12 @@ public class AppConfig {
         animal.setName("dog");
         return animal;
     }
+    @Bean(name = "Cat")
+    public Cat getName() {
+        Cat animal1 = new Cat();
+        animal1.setName("Cat");
+        return animal1;
+    }
 
     @Bean(name = "timer")
     public Timer getTime(){
